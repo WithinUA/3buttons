@@ -1,1 +1,13 @@
-<p>buttons works!</p>
+
+<div>
+    <h1>WORLD BIGGEST THINGS</h1>
+    <div class="list">
+        <button *ngFor="let button of buttons" class="button" (click)="getTheObject(button.name)">{{button.name}}</button>
+    </div>
+</div>
+
+<div class="list">
+    <div *ngFor="let technic of technics" [ngClass]="{display:technic.visibility}">
+        <img [src]="technic.imgPath" alt="technic">
+    </div>
+</div>
