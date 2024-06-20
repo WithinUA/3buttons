@@ -2,7 +2,7 @@
 <div>
     <h1>WORLD BIGGEST THINGS</h1>
     <div class="list">
-        <button *ngFor="let button of buttons" class="button" (click)="getTheObject(button.name)">{{button.name}}</button>
+        <button *ngFor="let button of buttons" class="button" (click)="getTheObject(button.name)">{{button.name | uppercase}}</button>
     </div>
 </div>
 
